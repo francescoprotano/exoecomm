@@ -73,6 +73,18 @@ public class Utente {
 		return ruolo!=null && ruolo.isStaff();
 	}
 	
+	public Utente(String email, String password) {
+		super();
+		this.email = email;
+		this.password = password;
+		
+	}
+	@Override
+	public String toString() {
+		return "Utente [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", email=" + email + ", password="
+				+ password + "]";
+	}
+	
 	
 
 }

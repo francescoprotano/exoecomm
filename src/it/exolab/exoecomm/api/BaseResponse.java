@@ -18,6 +18,7 @@ public class BaseResponse<T> implements Serializable {
 		return err_code;
 	}
 	public void setErr_code(String err_code) {
+		success=false;
 		this.err_code = err_code;
 	}
 	public String getErr() {
